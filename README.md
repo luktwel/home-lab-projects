@@ -37,9 +37,8 @@ The goal of this home lab is to develop practical cybersecurity skills through r
 
 Each folder represents a separate lab or experiment:
 
-- `/networking` → Network scanning, traffic analysis, connectivity tests   
-- `/linux-labs` → Linux system exploration and privilege concepts    
-- `/notes` → Documentation and learning summaries  
+- `/defence` → Network scanning, traffic analysis, packet analysis   
+- `/offence' → network scanning, ennumeration, exploitation
 
 ---
 
