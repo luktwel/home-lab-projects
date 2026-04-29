@@ -18,7 +18,7 @@ The goal of this exercise was to identify and exploit a known vulnerability in t
 I performed a stealth and version-based Nmap scan using SYN scan and service detection to identify open ports and running services on the target machine.
 
 ```bash
-nmap -sS -sV <TARGET_IP>
+nmap -sS -sV 192.168.190.128
 Results:
 Port 21/tcp: FTP (vsftpd 2.3.4)
 
