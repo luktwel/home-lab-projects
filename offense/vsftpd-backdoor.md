@@ -17,10 +17,6 @@ The goal of this exercise was to identify and exploit a known vulnerability in t
 
 A SYN scan with version detection was performed to identify open ports and running services.
 
-## Reconnaissance
-
-A SYN scan with version detection was performed to identify open ports and running services.
-
 ```bash
 nmap -sS -sV 192.168.190.128
 ```
@@ -55,7 +51,7 @@ set RHOSTS 192.168.190.128
 set RPORT 21
 run
 ```
-![metasploit-output]
+![metasploit-output](screenshots/metasploit-exploit.png)
 
 ---
 
