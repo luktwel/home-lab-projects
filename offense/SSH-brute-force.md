@@ -64,7 +64,7 @@ using Hydra.
 hydra -L users.txt -P passwords.txt ssh://192.168.190.128
 ```
 
-![toubleshoot](screenshots/hydra-troubleshoot.png)
+![hydra](screenshots/hydra-attempt.png)
 
 **Result:** Failed. Hydra encountered a MAC algorithm mismatch
 between the modern Kali SSH client and Metasploitable2's legacy
@@ -126,7 +126,7 @@ were required:
 ssh sys@192.168.190.128 
 ```
 
-![ssh-login](SSH-login-success.png)
+![ssh-login](screenshots/SSH-login-succes.png)
 
 ```bash
 whoami
@@ -138,7 +138,7 @@ hostname
 ```
 Output: `metasploitable`
 
-![whoami,hostname](
+![whoami,hostname](screenshots/whoami,hostname.png)
 
 ---
 
