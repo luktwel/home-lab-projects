@@ -23,7 +23,6 @@ MD5crypt (`$1$`) hashes using the rockyou.txt wordlist.
 john --format=md5crypt --wordlist=/usr/share/wordlists/rockyou.txt /home/kali/filestation/shadow.txt
 ```
 
-📸 *Screenshot: John the Ripper cracking passwords*
 
 After completion, the cracked credentials were displayed:
 
@@ -31,7 +30,7 @@ After completion, the cracked credentials were displayed:
 john --show shadow.txt
 ```
 
-📸 *Screenshot: Cracked credentials output*
+![john](screenshots/john-password-crack-success.png)
 
 **Result:** 6 out of 7 hashes were successfully cracked.
 
@@ -65,7 +64,7 @@ using Hydra.
 hydra -L users.txt -P passwords.txt ssh://192.168.190.128
 ```
 
-📸 *Screenshot: Hydra error output*
+![toubleshoot](screenshots/hydra-troubleshoot.png)
 
 **Result:** Failed. Hydra encountered a MAC algorithm mismatch
 between the modern Kali SSH client and Metasploitable2's legacy
@@ -89,7 +88,7 @@ attempt was made with Hydra by specifying a legacy MAC algorithm:
 hydra -L users.txt -P passwords.txt ssh://192.168.190.128 -t 4 -m "MACs=hmac-sha1"
 ```
 
-📸 *Screenshot: Second Hydra attempt*
+![toubleshoot](screenshots/hydra-troubleshoot.png)
 
 **Result:** Failed again. Hydra was unable to handle the full legacy
 SSH configuration of Metasploitable2.
@@ -107,8 +106,7 @@ was created:
 ```bash
 medusa -H metasploitable.ip -U users.txt -P passwords.txt -M ssh
 ```
-
-📸 *Screenshot: Medusa output with valid credentials*
+![medusa](screenshots/medusa-bruteforce.png)
 
 **Result:** Success. Medusa found valid SSH credentials:
 
@@ -128,7 +126,7 @@ were required:
 ssh sys@192.168.190.128 
 ```
 
-📸 *Screenshot: Successful SSH login*
+![ssh-login](SSH-login-success.png)
 
 ```bash
 whoami
@@ -140,7 +138,7 @@ hostname
 ```
 Output: `metasploitable`
 
-📸 *Screenshot: whoami and hostname output*
+![whoami,hostname](
 
 ---
 
@@ -180,6 +178,5 @@ to full system compromise.
 ## Mitigations
 - Use strong, unique passwords for all system accounts
 - Disable SSH password authentication — use key-based auth instead
-- Implement fail2ban to block brute force attempts
 - Regularly audit user accounts and remove unused ones
 - Keep SSH and system software up to date
