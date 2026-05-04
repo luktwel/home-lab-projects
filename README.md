@@ -38,7 +38,7 @@ The goal of this home lab is to develop practical cybersecurity skills through r
 Each folder represents a separate lab or experiment:
 
 - `/defence` → Network scanning, traffic analysis, packet analysis   
-- `/offence' → network scanning, ennumeration, exploitation
+- `/offense` → network scanning, ennumeration, exploitation
 
 ---
 
