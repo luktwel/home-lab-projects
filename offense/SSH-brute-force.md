@@ -119,8 +119,6 @@ ACCOUNT FOUND: [ssh] Host: 192.168.190.128 User: sys Password: batman [SUCCESS]
 ## Step 3: SSH Access
 
 Using the credentials found by Medusa, SSH access was established.
-Due to Metasploitable2's legacy SSH configuration, additional flags
-were required:
 
 ```bash
 ssh sys@192.168.190.128 
